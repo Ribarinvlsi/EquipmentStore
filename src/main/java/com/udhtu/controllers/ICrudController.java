@@ -1,6 +1,6 @@
 package com.udhtu.controllers;
 
-import com.udhtu.model.BasedDto;
+import com.udhtu.model.dto.BasedDto;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.udhtu.model;
+package com.udhtu.model.dto;
 
 import javax.xml.crypto.Data;
 import java.util.Objects;
@@ -7,7 +7,7 @@ public class ReceiptDto
         extends BasedDto<Long> {
     private ClientDto client;
     private ProductDto product;
-    private Data purchaseDate;
+    private String purchaseDate;
 
     // region get, set
     public ClientDto getClient() {
@@ -26,11 +26,11 @@ public class ReceiptDto
         this.product = product;
     }
 
-    public Data getPurchaseDate() {
+    public String getPurchaseDate() {
         return purchaseDate;
     }
 
-    public void setPurchaseDate(Data purchaseDate) {
+    public void setPurchaseDate(String purchaseDate) {
         this.purchaseDate = purchaseDate;
     }
     // endregion

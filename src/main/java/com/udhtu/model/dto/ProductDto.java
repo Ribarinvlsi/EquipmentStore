@@ -1,4 +1,4 @@
-package com.udhtu.model;
+package com.udhtu.model.dto;
 
 import java.util.Objects;
 

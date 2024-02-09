@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: lab.3
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sweets_shop?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=yes&characterEncoding=UTF-8&characterSetResults=UTF-8&serverTimezone=UTC&zeroDateTimeBehavior=convertToNull
+    password: root
+    username: root
+  data:
+    jpa:
+      repositories:
+        bootstrap_mode: default
+  jpa:
+    hibernate.ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        dialect.storage_engine: innodb
+        format_sql: true
+        ddl-auto: create
+    generate-ddl: true
+    show-sql: false
